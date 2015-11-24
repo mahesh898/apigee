@@ -1,7 +1,7 @@
 # apigee-deploy-now
 Deploy Now button for Apigee Edge samples.
 
-[![Deploy to Apigee](./images/deploy_to_apigee.png)](http://localhost:3000/login-form/)
+[![Deploy to Apigee](./images/deploy_to_apigee.png)](http://localhost:3000/login-form/?repo=https://github.com/maruthichand/Mavendeploynow.git&apiFolder=/src/gateway/forecastweatherapi/&makeScript=makeScript.sh)
 
 ##### Trigger make API
 ```shell
