@@ -1,12 +1,15 @@
 # apigee-deploy-now
 Deploy Now button for Apigee Edge samples.
 
-[![Deploy to Apigee](./images/deploy_to_apigee.png)](https://ec2-52-23-232-127.compute-1.amazonaws.com/login-form/?repo=https://github.com/maruthichand/Mavendeploynow.git&apiFolder=/src/gateway/forecastweatherapi/&makeScript=makeScript.sh)
+[![Deploy to Apigee](./images/deploy_to_apigee.png)](https://ec2-52-23-232-127.compute-1.amazonaws.com/login-form/?repo=https://github.com/dzuluaga/Mavendeploynow.git&apiFolder=/src/gateway/forecastweatherapi/&makeScript=makeScript.sh)
+
+** Localhost: **
+[![Deploy to Apigee](./images/deploy_to_apigee.png)](http://localhost:3000/login-form/?repo=https://github.com/dzuluaga/Mavendeploynow.git&apiFolder=/src/gateway/forecastweatherapi/&makeScript=makeScript.sh)
 
 ##### Trigger make API
 ```shell
-curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'repo=https%3A%2F%2Fgithub.com%2Fakoo1010%2Fapigee-tutorials.git' -d 'apiFolder=apiproxies%2Fapigee-nock-mock' -d 'makeScript=make.sh' \
--d 'org=testmyapi' -d 'env=test' -d 'userName='$ae_username'' -d 'pw='$ae_password'' 'http://localhost:3000/deploy' -v
+curl -v -X POST -F "zipFile=@/Users/ApigeeCorporation/Downloads/Mavendeploynow-master.zip" -F "makeScript=makeScript.sh" -F "apiFolder=Mavendeploynow-master/src/gateway/forecastweatherapi/" -F "org=testmyapi" -F "env=test" \
+-F userName=$ae_username -F pw=$ae_password 'https://ec2-52-23-232-127.compute-1.amazonaws.com/deploy_zip' -k
 ```
 
 ##### Access Login App
