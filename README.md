@@ -7,7 +7,7 @@ This is an example of how you can enable a Maven API proxy with the Deploy Now b
 
 ##### Trigger make API
 ```shell
-curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'repo=https%3A%2F%2Fgithub.com%2Fakoo1010%2Fapigee-tutorials.git' -d 'apiFolder=apiproxies%2Fapigee-nock-mock' -d 'makeScript=make.sh' \
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'repo=https:%2F%2Fgithub.com%2Fdzuluaga%2FMavendeploynow.git' -d 'apiFolder=apiproxies%2' -d 'makeScript=make.sh' \
 -d 'org=testmyapi' -d 'env=test' -d 'userName='$ae_username'' -d 'pw='$ae_password'' 'http://localhost:3000/deploy' -v
 ```
 
