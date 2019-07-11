@@ -10,5 +10,5 @@ This is an example of how you can enable a Maven API proxy with the Deploy Now b
 Note that Deploy Now button requires the following query parameters:
 
 - repo: https://github.com/mahesh898/apigee.git
-- apiFolder: apiproxies
+- apiFolder: apigee/apiproxies
 - makeScript: make.sh
